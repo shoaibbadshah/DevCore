@@ -11,8 +11,8 @@ export default function About() {
               src="/img/about/01.jpg"
               alt="About DevCore"
               width={540}
-              height={600}
-              className="rounded-lg object-cover w-full h-full"
+              height={450}
+              className="rounded-lg object-cover w-full h-[450px]"
             />
           </div>
           <div className="wow fadeInUp" data-wow-delay=".3s">

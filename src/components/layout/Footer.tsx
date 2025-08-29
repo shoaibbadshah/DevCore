@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { PaperPlaneIcon } from '@radix-ui/react-icons';
+import { Send } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -43,7 +43,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Subscribe to our newsletter</h3>
             <form className="flex gap-2">
               <Input type="email" placeholder="Enter your email" className="bg-secondary border-border/50" />
-              <Button type="submit" size="icon" variant="outline"><PaperPlaneIcon/></Button>
+              <Button type="submit" size="icon" variant="outline"><Send className="h-4 w-4" /></Button>
             </form>
           </div>
         </div>

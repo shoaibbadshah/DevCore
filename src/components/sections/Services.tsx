@@ -1,3 +1,4 @@
+
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -30,6 +31,11 @@ const services = [
     description: 'Seamless client relationship management & financial oversight to ensure efficient transactions & optimized revenue streams.',
     image: '/img/services/s5.jpg',
   },
+   {
+    title: 'MORTGAGE & CONVEYANCE',
+    description: 'Expert guidance through financing and legal processes, ensuring a smooth and secure property transfer experience from start to finish.',
+    image: '/img/services/s5.jpg',
+  },
 ];
 
 export default function Services() {
@@ -38,9 +44,9 @@ export default function Services() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center mb-12">
           <div>
-            <h2 className="text-sm uppercase tracking-widest text-accent mb-4">Our Services</h2>
+            <h2 className="text-sm uppercase tracking-widest text-primary mb-4">Our Services</h2>
             <p className="text-4xl md:text-5xl font-teko font-semibold leading-tight">
-              We Shape the <span className="text-accent">Perfect</span> Solution
+              We Shape the <span className="text-primary">Perfect</span> Solution
             </p>
           </div>
           <Button asChild className="hidden md:flex">
@@ -56,7 +62,7 @@ export default function Services() {
               <CardContent className="p-6">
                 <CardTitle className="text-2xl font-teko mb-4">{service.title}</CardTitle>
                 <p className="text-muted-foreground mb-6">{service.description}</p>
-                <Link href="#" className="flex items-center text-accent font-semibold hover:underline">
+                <Link href="#" className="flex items-center text-primary font-semibold hover:underline">
                   Read More <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </CardContent>

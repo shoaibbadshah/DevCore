@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -31,9 +32,9 @@ export default function Projects() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center mb-12">
           <div>
-            <h2 className="text-sm uppercase tracking-widest text-accent mb-4">Our Work</h2>
+            <h2 className="text-sm uppercase tracking-widest text-primary mb-4">Our Work</h2>
             <p className="text-4xl md:text-5xl font-teko font-semibold leading-tight">
-              Our Recent <span className="text-accent">Projects</span>
+              Our Recent <span className="text-primary">Projects</span>
             </p>
           </div>
           <Button asChild>

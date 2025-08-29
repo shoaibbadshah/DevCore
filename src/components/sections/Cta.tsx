@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
@@ -16,9 +17,9 @@ export default function Cta() {
             />
           </div>
           <div className="py-12 lg:py-24">
-            <h2 className="text-sm uppercase tracking-widest text-accent mb-4">Top Branded</h2>
+            <h2 className="text-sm uppercase tracking-widest text-primary mb-4">Top Branded</h2>
             <p className="text-3xl md:text-4xl font-teko font-semibold leading-tight mb-6">
-              Provident's Top <span className="text-accent">Branded</span> Development In The UAE Coffee Table Book
+              Provident's Top <span className="text-primary">Branded</span> Development In The UAE Coffee Table Book
             </p>
             <p className="text-lg text-muted-foreground mb-8">
               The first-ever dedicated platform for branded developments in the UAE. Discover an exclusive collection of the finest properties in Provident's branded projects coffee table book.

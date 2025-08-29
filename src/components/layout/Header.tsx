@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -23,13 +24,13 @@ export default function Header() {
           </Link>
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-white hover:text-accent transition-colors">
+              <Link key={link.href} href={link.href} className="text-white hover:text-primary transition-colors">
                 {link.label}
               </Link>
             ))}
           </nav>
           <div className="hidden lg:flex items-center gap-4">
-            <Button asChild variant="outline">
+            <Button asChild>
               <Link href="#contact">Get In Touch</Link>
             </Button>
           </div>
@@ -40,10 +41,10 @@ export default function Header() {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="bg-background">
+              <SheetContent side="right" className="bg-background border-l-border">
                 <nav className="flex flex-col gap-6 mt-8">
                   {navLinks.map((link) => (
-                    <Link key={link.href} href={link.href} className="text-lg hover:text-accent transition-colors">
+                    <Link key={link.href} href={link.href} className="text-lg hover:text-primary transition-colors">
                       {link.label}
                     </Link>
                   ))}

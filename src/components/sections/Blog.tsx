@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -28,8 +29,8 @@ export default function Blog() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center mb-12">
           <div>
-            <h2 className="text-sm uppercase tracking-widest text-accent mb-4">Blog & News</h2>
-            <p className="text-4xl md:text-5xl font-teko font-semibold leading-tight">Latest News & <span className="text-accent">Blog</span></p>
+            <h2 className="text-sm uppercase tracking-widest text-primary mb-4">Blog & News</h2>
+            <p className="text-4xl md:text-5xl font-teko font-semibold leading-tight">Latest News & <span className="text-primary">Blog</span></p>
           </div>
           <Button asChild className="hidden md:flex">
             <Link href="#">See All Blog</Link>
@@ -37,16 +38,16 @@ export default function Blog() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post, index) => (
-            <Card key={index} className="overflow-hidden group">
+            <Card key={index} className="overflow-hidden group bg-secondary border-border/50">
               <div className="relative">
                 <Image src={post.image} alt={post.title} width={400} height={250} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <CardContent className="p-6">
                 <p className="text-sm text-muted-foreground mb-2">{post.date}</p>
-                <h3 className="text-2xl font-teko font-semibold mb-4 hover:text-accent transition-colors">
+                <h3 className="text-2xl font-teko font-semibold mb-4 hover:text-primary transition-colors">
                   <Link href="#">{post.title}</Link>
                 </h3>
-                <Link href="#" className="flex items-center font-semibold text-accent">
+                <Link href="#" className="flex items-center font-semibold text-primary">
                   View Details <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </CardContent>

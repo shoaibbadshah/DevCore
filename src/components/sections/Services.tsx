@@ -40,7 +40,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 md:py-32 bg-background">
+    <section id="services" className="py-20 md:py-32 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center mb-12">
           <div>
@@ -55,7 +55,7 @@ export default function Services() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="bg-secondary border-border/50 overflow-hidden group">
+            <Card key={index} className="bg-background border-border/50 overflow-hidden group">
               <CardHeader className="p-0">
                 <Image src={service.image} alt={service.title} width={400} height={250} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
               </CardHeader>

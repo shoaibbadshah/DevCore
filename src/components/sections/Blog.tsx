@@ -38,7 +38,7 @@ export default function Blog() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post, index) => (
-            <Card key={index} className="overflow-hidden group bg-secondary border-border/50">
+            <Card key={index} className="overflow-hidden group bg-card border-border">
               <div className="relative">
                 <Image src={post.image} alt={post.title} width={400} height={250} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>

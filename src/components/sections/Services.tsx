@@ -1,58 +1,67 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code, Smartphone, Palette, ShoppingCart, TestTube2, Users } from 'lucide-react';
+import { ArrowRight, Building, Handshake, Megaphone, Search, Users } from 'lucide-react';
+import Image from 'next/image';
 
 const services = [
   {
-    icon: <Code className="h-10 w-10 text-accent" />,
-    title: 'Web Development',
-    description: 'Creating responsive and powerful websites tailored to your business needs.',
+    image: 'https://picsum.photos/400/300?random=1',
+    hint: 'handshake deal',
+    title: 'Land Acquisition',
+    description: 'Complete transparency on the process of acquiring land for our clients.',
   },
   {
-    icon: <Smartphone className="h-10 w-10 text-accent" />,
-    title: 'Mobile App Development',
-    description: 'Building intuitive and high-performance mobile apps for iOS and Android.',
+    image: 'https://picsum.photos/400/300?random=2',
+    hint: 'architectural design',
+    title: 'Design & Development',
+    description: 'We move forward with our clients, from architectural design to handover.',
   },
   {
-    icon: <Palette className="h-10 w-10 text-accent" />,
-    title: 'UI/UX Design',
-    description: 'Designing beautiful and user-friendly interfaces that enhance user experience.',
+    image: 'https://picsum.photos/400/300?random=3',
+    hint: 'marketing graph',
+    title: 'Sales & Marketing',
+    description: 'Ensuring your property is sold to the right investors through our large agent network.',
   },
   {
-    icon: <ShoppingCart className="h-10 w-10 text-accent" />,
-    title: 'E-commerce Solutions',
-    description: 'Developing robust e-commerce platforms to grow your online business.',
+    image: 'https://picsum.photos/400/300?random=4',
+    hint: 'digital content',
+    title: 'Content Creation',
+    description: 'We produce high-quality content that engages with your target audience.',
   },
   {
-    icon: <TestTube2 className="h-10 w-10 text-accent" />,
-    title: 'Software Testing',
-    description: 'Ensuring your software is bug-free and performs flawlessly with our QA services.',
-  },
-  {
-    icon: <Users className="h-10 w-10 text-accent" />,
-    title: 'Dedicated Team',
-    description: 'Augmenting your team with our skilled and dedicated development experts.',
+    image: 'https://picsum.photos/400/300?random=5',
+    hint: 'data collection',
+    title: 'CRM & Collections',
+    description: 'Our team handles all the paperwork, from the first transaction until the last.',
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 md:py-32">
+    <section id="services" className="bg-primary text-primary-foreground py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Services</h2>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-            We offer a wide range of services to help you achieve your business goals.
-          </p>
+        <div className="flex justify-between items-center mb-12">
+          <div>
+            <p className="text-primary-foreground/80">Our Services</p>
+            <h2 className="text-3xl md:text-4xl font-bold">We Shape The Perfect Solution</h2>
+          </div>
+          <button className="bg-white text-primary px-6 py-2 rounded-md hover:bg-gray-200">
+            View All Services
+          </button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="flex flex-col items-center text-center p-6 hover:shadow-xl transition-shadow duration-300">
+            <Card key={index} className="bg-primary border-primary-foreground/20 text-primary-foreground overflow-hidden">
+               <div className="relative aspect-[4/3]">
+                <Image src={service.image} alt={service.title} fill className="object-cover" data-ai-hint={service.hint} />
+              </div>
               <CardHeader>
-                {service.icon}
-                <CardTitle className="mt-4">{service.title}</CardTitle>
+                <CardTitle>{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground/70">{service.description}</p>
+                <p className="text-primary-foreground/70 mb-4">{service.description}</p>
+                <a href="#" className="flex items-center text-white hover:underline">
+                  Read More <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
               </CardContent>
             </Card>
           ))}

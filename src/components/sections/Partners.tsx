@@ -1,34 +1,23 @@
-import Image from 'next/image';
+import { Award, Building, DollarSign, Home, Key, Users } from "lucide-react";
 
-const partners = [
-  { name: 'Innovate Corp', logoUrl: 'https://picsum.photos/150/50?random=1', hint: 'company logo' },
-  { name: 'Tech Solutions', logoUrl: 'https://picsum.photos/150/50?random=2', hint: 'company logo' },
-  { name: 'Creative Minds', logoUrl: 'https://picsum.photos/150/50?random=3', hint: 'company logo' },
-  { name: 'Future Systems', logoUrl: 'https://picsum.photos/150/50?random=4', hint: 'company logo' },
-  { name: 'Alpha Projects', logoUrl: 'https://picsum.photos/150/50?random=5', hint: 'company logo' },
-  { name: 'Global Ventures', logoUrl: 'https://picsum.photos/150/50?random=6', hint: 'company logo' },
+const stats = [
+  { value: '2000+', label: 'projects', icon: <Building /> },
+  { value: '25BN+', label: 'value of projects', icon: <DollarSign /> },
+  { value: '25000k', label: 'professional partners', icon: <Users /> },
+  { value: '200k', label: 'properties sold', icon: <Home /> },
+  { value: '10500k', label: 'happy clients', icon: <Users /> },
+  { value: '3000k', label: 'awards won', icon: <Award /> },
 ];
 
 export default function Partners() {
   return (
-    <section id="partners" className="py-20 md:py-24">
+    <section id="partners" className="py-12 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Partners</h2>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-            We are proud to collaborate with leading companies and technology partners.
-          </p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
-          {partners.map((partner, index) => (
-            <div key={index} className="relative h-[50px] w-[150px]">
-              <Image
-                src={partner.logoUrl}
-                alt={partner.name}
-                fill
-                className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                data-ai-hint={partner.hint}
-              />
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+          {stats.map((stat, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <p className="text-3xl font-bold text-primary">{stat.value}</p>
+              <p className="text-sm text-foreground/80">{stat.label}</p>
             </div>
           ))}
         </div>

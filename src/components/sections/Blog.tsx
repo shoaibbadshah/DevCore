@@ -44,7 +44,7 @@ export default function Blog() {
               </div>
               <CardContent className="p-6">
                 <p className="text-sm text-muted-foreground mb-2">{post.date}</p>
-                <h3 className="text-2xl font-teko font-semibold mb-4 hover:text-primary transition-colors">
+                <h3 className="text-xl font-semibold mb-4 hover:text-primary transition-colors">
                   <Link href="#">{post.title}</Link>
                 </h3>
                 <Link href="#" className="flex items-center font-semibold text-primary">

@@ -30,7 +30,7 @@ export default function Header() {
             ))}
           </nav>
           <div className="hidden lg:flex items-center gap-4">
-            <Button asChild>
+            <Button asChild variant="secondary" className='bg-white text-primary hover:bg-white/90'>
               <Link href="#contact">Get In Touch</Link>
             </Button>
           </div>
@@ -41,10 +41,10 @@ export default function Header() {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="bg-background border-l-border">
+              <SheetContent side="right" className="bg-secondary border-l-border">
                 <nav className="flex flex-col gap-6 mt-8">
                   {navLinks.map((link) => (
-                    <Link key={link.href} href={link.href} className="text-lg hover:text-primary transition-colors">
+                    <Link key={link.href} href={link.href} className="text-lg text-foreground hover:text-primary transition-colors">
                       {link.label}
                     </Link>
                   ))}

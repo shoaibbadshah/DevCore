@@ -45,7 +45,7 @@ export default function Services() {
         <div className="flex justify-between items-center mb-12">
           <div>
             <h2 className="text-sm uppercase tracking-widest text-primary mb-4">Our Services</h2>
-            <p className="text-4xl md:text-5xl font-teko font-semibold leading-tight">
+            <p className="text-4xl md:text-5xl font-teko font-semibold leading-tight text-foreground">
               We Shape the <span className="text-primary">Perfect</span> Solution
             </p>
           </div>

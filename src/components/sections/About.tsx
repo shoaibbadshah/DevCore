@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
@@ -5,15 +6,15 @@ export default function About() {
   return (
     <section id="about" className="py-20 md:py-32 bg-[#171717]">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="wow fadeInUp">
+        <div className="grid lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-5 wow fadeInUp">
             <div className="relative">
               <Image
                 src="/img/about/01.jpg"
                 alt="About DevCore"
-                width={526}
-                height={550}
-                className="rounded-lg object-cover w-full h-[550px]"
+                width={400}
+                height={450}
+                className="rounded-lg object-cover w-full h-[450px]"
               />
               <div className="absolute -bottom-8 -right-8 bg-background p-6 rounded-lg shadow-lg w-64">
                 <h3 className="text-4xl font-teko font-bold text-accent">25+</h3>
@@ -21,7 +22,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="wow fadeInUp" data-wow-delay=".3s">
+          <div className="lg:col-span-7 wow fadeInUp" data-wow-delay=".3s">
             <h2 className="text-sm uppercase tracking-widest text-accent mb-4">About Us</h2>
             <p className="text-4xl md:text-5xl font-teko font-semibold leading-tight text-white mb-6">
               Precision, <span className="text-accent underline">Innovation</span> & Seamless <span className="text-accent underline">Execution</span>

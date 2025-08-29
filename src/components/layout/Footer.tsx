@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-4">
-            <Image src="/DevCoreWeb/assets/img/logo/white-logo.svg" alt="DevCore Logo" width={150} height={40} />
+            <Image src="/img/logo/white-logo.svg" alt="DevCore Logo" width={150} height={40} />
             <p className="text-muted-foreground">
               DEVCORE is a cutting-edge real estate hub, built on the foundation of expertise, innovation, and seamless execution.
             </p>

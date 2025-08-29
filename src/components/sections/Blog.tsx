@@ -8,17 +8,17 @@ const blogPosts = [
   {
     title: 'The Power of Visual Branding',
     date: 'August 17, 2024',
-    image: '/DevCoreWeb/assets/img/news/blog-one-img-1.jpg',
+    image: '/img/news/blog-one-img-1.jpg',
   },
   {
     title: 'Top 5 Up-and-Coming Neighborhoods',
     date: 'August 15, 2024',
-    image: '/DevCoreWeb/assets/img/news/blog-one-img-2.jpg',
+    image: '/img/news/blog-one-img-2.jpg',
   },
   {
     title: 'Navigating the Dubai Property Market',
     date: 'August 12, 2024',
-    image: '/DevCoreWeb/assets/img/news/blog-one-img-3.jpg',
+    image: '/img/news/blog-one-img-3.jpg',
   },
 ];
 

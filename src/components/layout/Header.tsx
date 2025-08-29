@@ -19,7 +19,7 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <Link href="/">
-            <Image src="/DevCoreWeb/assets/img/logo/white-logo.svg" alt="DevCore Logo" width={135} height={40} />
+            <Image src="/img/logo/white-logo.svg" alt="DevCore Logo" width={135} height={40} />
           </Link>
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (

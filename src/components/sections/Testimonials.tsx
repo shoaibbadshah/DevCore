@@ -8,21 +8,21 @@ const testimonials = [
     role: 'Real Estate Investor',
     testimonial:
       "DevCore's market insights and strategic approach to land acquisition have been instrumental in my investment success. Their team's expertise is unmatched.",
-    avatar: '/DevCoreWeb/assets/img/testimonial/author-1.png',
+    avatar: '/img/testimonial/author-1.png',
   },
   {
     name: 'Sarah L.',
     role: 'Lead Architect',
     testimonial:
       'Working with DevCore on the design and development of our latest project was a game-changer. Their vision and execution are top-notch.',
-    avatar: '/DevCoreWeb/assets/img/testimonial/author-2.png',
+    avatar: '/img/testimonial/author-2.png',
   },
   {
     name: 'Michael P.',
     role: 'Marketing Director',
     testimonial:
       "The sales and marketing campaign DevCore crafted for our luxury apartments exceeded all expectations. We sold out in record time!",
-    avatar: '/DevCoreWeb/assets/img/testimonial/author-3.png',
+    avatar: '/img/testimonial/author-3.png',
   },
 ];
 

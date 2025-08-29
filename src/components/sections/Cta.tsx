@@ -8,7 +8,7 @@ export default function Cta() {
         <div className="grid lg:grid-cols-2 items-center gap-8">
           <div className="relative h-64 lg:h-auto lg:self-end">
             <Image
-              src="/DevCoreWeb/assets/img/brand/guide.png"
+              src="/img/brand/guide.png"
               alt="Provident's Top Branded Development Guide"
               width={400}
               height={500}

@@ -8,27 +8,27 @@ const services = [
   {
     title: 'LAND ACQUISITION',
     description: 'Strategic sourcing of prime real estate opportunities, ensuring high-value investments for developers and investors.',
-    image: '/DevCoreWeb/assets/img/services/s1.jpg',
+    image: '/img/services/s1.jpg',
   },
   {
     title: 'DESIGN & DEVELOPMENT',
     description: 'Innovative, future-ready projects built with precision, sustainability, and market appeal in mind.',
-    image: '/DevCoreWeb/assets/img/services/s2.jpg',
+    image: '/img/services/s2.jpg',
   },
   {
     title: 'SALES & MARKETING',
     description: 'Maximizing property exposure and sales velocity through cutting-edge branding, digital campaigns, and strategic sales execution.',
-    image: '/DevCoreWeb/assets/img/services/s3.jpg',
+    image: '/img/services/s3.jpg',
   },
   {
     title: 'CONTENT CREATION',
     description: 'Elevating real estate storytelling with high-quality visuals, immersive media, and powerful narratives that captivate buyers.',
-    image: '/DevCoreWeb/assets/img/services/s4.jpg',
+    image: '/img/services/s4.jpg',
   },
   {
     title: 'CRM & COLLECTIONS',
     description: 'Seamless client relationship management & financial oversight to ensure efficient transactions & optimized revenue streams.',
-    image: '/DevCoreWeb/assets/img/services/s5.jpg',
+    image: '/img/services/s5.jpg',
   },
 ];
 

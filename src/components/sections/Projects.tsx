@@ -5,23 +5,23 @@ import { Button } from '@/components/ui/button';
 const projects = [
   {
     title: 'White Bay Umm Al Quwain',
-    image: '/DevCoreWeb/assets/img/project/project-one-img-1.jpg',
+    image: '/img/project/project-one-img-1.jpg',
   },
   {
     title: 'Modern Villa, Dubai Hills',
-    image: '/DevCoreWeb/assets/img/project/project-one-img-2.jpg',
+    image: '/img/project/project-one-img-2.jpg',
   },
   {
     title: 'Downtown Luxury Apartments',
-    image: '/DevCoreWeb/assets/img/project/project-one-img-3.jpg',
+    image: '/img/project/project-one-img-3.jpg',
   },
   {
     title: 'Jumeirah Beach Residence',
-    image: '/DevCoreWeb/assets/img/project/project-one-img-4.jpg',
+    image: '/img/project/project-one-img-4.jpg',
   },
   {
     title: 'The Palm Tower',
-    image: '/DevCoreWeb/assets/img/project/project-one-img-5.jpg',
+    image: '/img/project/project-one-img-5.jpg',
   },
 ];
 

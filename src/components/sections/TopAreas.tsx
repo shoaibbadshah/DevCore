@@ -3,11 +3,11 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 const areas = [
-    { name: "Dubai Marina", image: "/DevCoreWeb/assets/img/project/a1.jpg" },
-    { name: "Downtown Dubai", image: "/DevCoreWeb/assets/img/project/a2.jpg" },
-    { name: "Palm Jumeirah", image: "/DevCoreWeb/assets/img/project/a3.jpg" },
-    { name: "Jumeirah Village Circle", image: "/DevCoreWeb/assets/img/project/a4.jpg" },
-    { name: "Business Bay", image: "/DevCoreWeb/assets/img/project/a5.jpg" },
+    { name: "Dubai Marina", image: "/img/project/a1.jpg" },
+    { name: "Downtown Dubai", image: "/img/project/a2.jpg" },
+    { name: "Palm Jumeirah", image: "/img/project/a3.jpg" },
+    { name: "Jumeirah Village Circle", image: "/img/project/a4.jpg" },
+    { name: "Business Bay", image: "/img/project/a5.jpg" },
 ];
 
 export default function TopAreas() {

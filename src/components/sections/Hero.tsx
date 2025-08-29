@@ -12,7 +12,7 @@ export default function Hero() {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <source src="/DevCoreWeb/assets/img/hero/Real Estate Dubai - Final.mp4" type="video/mp4" />
+        <source src="/img/hero/Real Estate Dubai - Final.mp4" type="video/mp4" />
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
       <div className="relative z-20 container mx-auto px-4 md:px-6">

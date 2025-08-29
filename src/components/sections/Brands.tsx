@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
 const brandLogos = [
-  { src: '/DevCoreWeb/assets/img/brand/01.png', alt: 'Brand 1' },
-  { src: '/DevCoreWeb/assets/img/brand/02.png', alt: 'Brand 2' },
-  { src: '/DevCoreWeb/assets/img/brand/03.png', alt: 'Brand 3' },
-  { src: '/DevCoreWeb/assets/img/brand/04.png', alt: 'Brand 4' },
-  { src: '/DevCoreWeb/assets/img/brand/05.png', alt: 'Brand 5' },
-  { src: '/DevCoreWeb/assets/img/brand/06.png', alt: 'Brand 6' },
+  { src: '/img/brand/01.png', alt: 'Brand 1' },
+  { src: '/img/brand/02.png', alt: 'Brand 2' },
+  { src: '/img/brand/03.png', alt: 'Brand 3' },
+  { src: '/img/brand/04.png', alt: 'Brand 4' },
+  { src: '/img/brand/05.png', alt: 'Brand 5' },
+  { src: '/img/brand/06.png', alt: 'Brand 6' },
 ];
 
 export default function Brands() {

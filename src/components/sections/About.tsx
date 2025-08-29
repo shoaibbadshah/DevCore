@@ -8,7 +8,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="wow fadeInUp">
             <Image
-              src="/DevCoreWeb/assets/img/about/01.jpg"
+              src="/img/about/01.jpg"
               alt="About DevCore"
               width={540}
               height={600}

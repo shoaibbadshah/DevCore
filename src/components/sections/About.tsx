@@ -10,9 +10,9 @@ export default function About() {
             <Image
               src="/img/about/01.jpg"
               alt="About DevCore"
-              width={540}
+              width={347}
               height={450}
-              className="rounded-lg object-cover w-full h-[450px]"
+              className="rounded-lg object-cover w-auto h-[450px] mx-auto"
             />
           </div>
           <div className="wow fadeInUp" data-wow-delay=".3s">

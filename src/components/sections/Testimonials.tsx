@@ -1,51 +1,64 @@
-import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 
-const news = [
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Image from 'next/image';
+
+const testimonials = [
   {
-    title: 'The Power Of Visual Branding',
-    date: 'August 11, 2021',
-    imageUrl: 'https://picsum.photos/400/300?random=1',
-    aiHint: 'team presentation'
+    name: 'John D.',
+    role: 'Real Estate Investor',
+    testimonial:
+      "DevCore's market insights and strategic approach to land acquisition have been instrumental in my investment success. Their team's expertise is unmatched.",
+    avatar: '/DevCoreWeb/assets/img/testimonial/author-1.png',
   },
   {
-    title: 'The Power Of Visual Branding',
-    date: 'August 11, 2021',
-    imageUrl: 'https://picsum.photos/400/300?random=2',
-    aiHint: 'business award'
+    name: 'Sarah L.',
+    role: 'Lead Architect',
+    testimonial:
+      'Working with DevCore on the design and development of our latest project was a game-changer. Their vision and execution are top-notch.',
+    avatar: '/DevCoreWeb/assets/img/testimonial/author-2.png',
+  },
+  {
+    name: 'Michael P.',
+    role: 'Marketing Director',
+    testimonial:
+      "The sales and marketing campaign DevCore crafted for our luxury apartments exceeded all expectations. We sold out in record time!",
+    avatar: '/DevCoreWeb/assets/img/testimonial/author-3.png',
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="bg-card py-20 md:py-32">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex justify-between items-center mb-12">
-          <div>
-            <p className="text-foreground/80">Our Feed</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Latest News &</h2>
-          </div>
-          <Button variant='outline'>View all news</Button>
+    <section className="py-20 section-padding section-bg">
+      <div className="container">
+        <div className="section-title-area">
+            <div className="section-title">
+                <h6 className="wow fadeInUp">Testimonials</h6>
+                <h2 className="wow fadeInUp" data-wow-delay=".3s">What Our <span>Client’s</span> Say</h2>
+            </div>
+            <a href="#" className="theme-btn white-btn wow fadeInUp" data-wow-delay=".5s">See All Testimonials</a>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {news.map((item, index) => (
-            <Card key={index} className="group overflow-hidden rounded-lg shadow-lg">
-              <CardContent className="p-0">
-                <div className="relative aspect-video overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="bg-background/50 border-border/20">
+              <CardHeader>
+                <div className="flex items-center gap-4">
                   <Image
-                    src={item.imageUrl}
-                    alt={item.title}
-                    fill
-                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
-                    data-ai-hint={item.aiHint}
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    width={56}
+                    height={56}
+                    className="rounded-full"
                   />
+                  <div>
+                    <CardTitle>{testimonial.name}</CardTitle>
+                    <p className="text-sm text-muted-foreground">
+                      {testimonial.role}
+                    </p>
+                  </div>
                 </div>
-                <div className="p-4 bg-card">
-                  <p className="text-sm text-foreground/70 mb-2">{item.date}</p>
-                  <h3 className="font-bold text-lg text-primary">{item.title}</h3>
-                  <a href="#" className="text-sm text-primary hover:underline mt-2 inline-block">View details</a>
-                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-foreground/80">{testimonial.testimonial}</p>
               </CardContent>
             </Card>
           ))}
@@ -54,3 +67,4 @@ export default function Testimonials() {
     </section>
   );
 }
+

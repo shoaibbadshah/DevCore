@@ -19,12 +19,12 @@ export default function About() {
           </div>
           <div className="lg:col-span-7 wow fadeInUp" data-wow-delay=".3s">
             <div className="pl-0 lg:pl-16">
-              <h2 className="text-sm uppercase tracking-widest text-primary mb-4">About Us</h2>
+              <h2 className="text-sm uppercase tracking-widest text-primary mb-4">Transforming Dubai Real Estate</h2>
               <p className="text-4xl md:text-5xl font-teko font-semibold leading-tight mb-6">
-                Precision, <span className="text-primary underline">Innovation</span> & Seamless <span className="text-primary underline">Execution</span>
+                Where Transparency Builds Trust And Strategy Delivers Results
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                At DEVCORE, we revolutionize real estate with integrated solutions that enhance efficiency, deliver impactful marketing, and provide expert development and design consultancy. We build lasting partnerships with developers and brokerages, empowering them to navigate industry complexities with confidence and success.
+                Our approach goes beyond transactions. We focus on building long-term trust, guiding clients with transparency, and applying proven strategies that deliver measurable results. Whether you are searching for your family home, expanding your portfolio, or entering Dubai’s market for the first time, we ensure every step is clear, seamless, and designed for success.
               </p>
               <Button>More About Us</Button>
             </div>
